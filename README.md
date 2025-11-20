@@ -1,10 +1,23 @@
 # **qSpeak** - Your Intelligent Voice Assistant
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Made with Tauri](https://img.shields.io/badge/Made%20with-Tauri-FFC131?logo=tauri)](https://tauri.app)
+[![GitHub Stars](https://img.shields.io/github/stars/qforge-dev/qspeak?style=social)](https://github.com/qforge-dev/qspeak)
+[![Discord](https://img.shields.io/discord/1351556230446846044?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/fDR5JQdcjx)
+
 ![qSpeak Demo](public/sayit.gif)
+
+Visit [qSpeak.app](https://qspeak.app) to download the latest version for free.
 
 qSpeak is a powerful voice transcription and AI assistant tool that helps you manage your workflow, answer questions, and maintain focus across all your applications.
 
-Unlike traditional voice transcription tools, qSpeak actively assists you in your daily tasks while keeping you in the zone.
+## ✨ Why qSpeak?
+
+- **🔓 Fully Open Source**: Transparent, auditable code you can trust
+- **🔒 Privacy First**: All processing happens locally on your device with local models
+- **💻 Cross-Platform**: Native support for Linux, Windows, and macOS
+- **🎯 Contextual AI**: Adaptive personas that adjust to your workflow
+- **🔌 Extensible**: MCP server integration for custom workflows
 
 ## 🌟 Key Features
 
@@ -55,6 +68,33 @@ Unlike traditional voice transcription tools, qSpeak actively assists you in you
 - macOS 10.15+
 - Ubuntu 22.04+
 
+## 🏗️ Building from Source
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later)
+- [pnpm](https://pnpm.io/) - `npm install -g pnpm`
+- [Rust](https://rustup.rs/) (latest stable)
+
+### Build Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/qforge-dev/qspeak.git
+cd qspeak
+
+# Install dependencies
+pnpm install
+
+# Run in development mode
+pnpm tauri dev
+
+# Build for production
+pnpm tauri build
+```
+
+The compiled application will be in `src-tauri/target/release/`.
+
 ## 📥 Download
 
 Visit our website to download qSpeak for your platform:
@@ -65,10 +105,13 @@ Visit our website to download qSpeak for your platform:
 
 ## 🤝 Support
 
-For support, feature requests, or bug reports, please:
+If you find qSpeak useful, please consider:
 
-- Visit our [Support Page](https://discord.com/invite/7M66v8rrQT)
-- Contact us at contact@qforge.dev
+- ⭐ **Starring this repository** - It helps others discover the project
+- 🐦 **Sharing on social media** - Spread the word
+- 🐛 **Reporting bugs** - Help us improve
+- 💡 **Suggesting features** - Share your ideas
+- 🤝 **Contributing code** - Join the development
 
 ## 📄 License
 
