@@ -206,26 +206,43 @@ function useNewState() {
   const stateChannelRef = useRef<Channel<AppStateChannelMessage> | null>(null);
 
   useEffect(() => {
+    let mounted = true;
+
     stateChannelRef.current = new Channel<AppStateChannelMessage>();
 
+    stateChannelRef.current.onmessage = (event) => {
+      if (!mounted) return;
+      
+      if ("Patch" in event) {
+        setState((prev) => {
+          if (!prev) return null;
+          return JsonPatch.apply(prev, event.Patch);
+        });
+      } else {
+        setState(event.FullState);
+      }
+    };
+
+    // Subscribe to state updates
     invoke("subscribe_to_new_app_state", {
       channel: stateChannelRef.current,
-    }).then(() => {
-      if (!stateChannelRef.current) return;
-
-      stateChannelRef.current.onmessage = (event) => {
-        if ("Patch" in event) {
-          setState((prev) => {
-            if (!prev) return null;
-            return JsonPatch.apply(prev, event.Patch);
-          });
-        } else {
-          setState(event.FullState);
-        }
-      };
+    }).catch((error) => {
+      console.error("Failed to subscribe to app state:", error);
     });
 
+    // Also fetch initial state as fallback
+    invoke<AppStateContext>("get_new_app_state")
+      .then((initialState) => {
+        if (mounted) {
+          setState(initialState);
+        }
+      })
+      .catch((error) => {
+        console.error("Failed to fetch initial app state:", error);
+      });
+
     return () => {
+      mounted = false;
       if (stateChannelRef.current) {
         // stateChannelRef.current.close();
       }

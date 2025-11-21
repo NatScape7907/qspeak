@@ -10,21 +10,21 @@ export function useStreamingAudio() {
   useEffect(() => {
     audioChannelRef.current = new Channel();
 
+    audioChannelRef.current.onmessage = (event) => {
+      if (Array.isArray(event)) {
+        setAudioData((prev) => {
+          const newBuffer = [...prev, ...event];
+          const trimmedBuffer =
+            newBuffer.length > MAX_BUFFER_SIZE ? newBuffer.slice(newBuffer.length - MAX_BUFFER_SIZE) : newBuffer;
+          return trimmedBuffer;
+        });
+      }
+    };
+
     invoke("listen_for_audio_data", {
       channel: audioChannelRef.current,
-    }).then(() => {
-      if (!audioChannelRef.current) return;
-
-      audioChannelRef.current.onmessage = (event) => {
-        if (Array.isArray(event)) {
-          setAudioData((prev) => {
-            const newBuffer = [...prev, ...event];
-            const trimmedBuffer =
-              newBuffer.length > MAX_BUFFER_SIZE ? newBuffer.slice(newBuffer.length - MAX_BUFFER_SIZE) : newBuffer;
-            return trimmedBuffer;
-          });
-        }
-      };
+    }).catch((error) => {
+      console.error("Failed to start listening for audio data:", error);
     });
 
     return () => {};
